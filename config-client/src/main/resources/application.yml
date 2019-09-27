@@ -1,0 +1,11 @@
+
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label:
+      profile:
+      uri:
+server:
+  port: 8881

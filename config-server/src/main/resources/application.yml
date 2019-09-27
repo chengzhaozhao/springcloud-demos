@@ -1,0 +1,15 @@
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri:   # git\u4ED3\u5E93\u5730\u5740
+          search-paths: #\u914D\u7F6E\u4ED3\u5E93\u8DEF\u5F84
+          default-label: #\u914D\u7F6Egit\u5206\u652F
+          username:  #git \u7528\u6237\u540D
+          password:  #git \u5BC6\u7801
+server:
+  port: 8888
