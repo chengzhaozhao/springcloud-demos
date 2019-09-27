@@ -6,7 +6,7 @@ spring:
     config:
       server:
         git:
-          uri:   # git\u4ED3\u5E93\u5730\u5740
+          uri:   https://github.com/chengzhaozhao/springcloud-demos/  # git\u4ED3\u5E93\u5730\u5740
           search-paths: #\u914D\u7F6E\u4ED3\u5E93\u8DEF\u5F84
           default-label: #\u914D\u7F6Egit\u5206\u652F
           username:  #git \u7528\u6237\u540D
