@@ -4,8 +4,19 @@ spring:
     name: config-client
   cloud:
     config:
-      label:
-      profile:
-      uri:
+      label: master
+      profile: dev
+#      uri: http://localhost:8888/ # \u914D\u7F6E\u4E2D\u5FC3uri
+    discovery:
+      enabled: true #\u662F\u4ECE\u914D\u7F6E\u4E2D\u5FC3\u8BFB\u53D6\u6587\u4EF6\u3002
+      client:
+        simple:
+          local:
+            service-id: config-server #  \u914D\u7F6E\u4E2D\u5FC3\u7684servieId\uFF0C\u5373\u670D\u52A1\u540D\u3002
+
 server:
   port: 8881
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8889/eureka/

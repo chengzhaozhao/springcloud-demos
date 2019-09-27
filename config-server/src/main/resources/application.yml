@@ -7,9 +7,28 @@ spring:
       server:
         git:
           uri:   https://github.com/chengzhaozhao/springcloud-demos/  # git\u4ED3\u5E93\u5730\u5740
-          search-paths: #\u914D\u7F6E\u4ED3\u5E93\u8DEF\u5F84
-          default-label: #\u914D\u7F6Egit\u5206\u652F
+          search-paths: config/springcloudconfig/repository #\u914D\u7F6E\u4ED3\u5E93\u8DEF\u5F84
+          default-label: master #\u914D\u7F6Egit\u5206\u652F
           username:  #git \u7528\u6237\u540D
           password:  #git \u5BC6\u7801
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+
 server:
   port: 8888
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8889/eureka/
+
+
+
